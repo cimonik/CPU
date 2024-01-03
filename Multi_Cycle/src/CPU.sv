@@ -1,7 +1,9 @@
 module CPU #(parameter width=32)(
     input clk,rst,
     input start,
-    output valid
+    input select,
+    output valid,
+    output reg [width-1:0] data
     );
     
     wire We_Data_Mem,We_Reg,Pc_Select,Alu_Select2,alu_flag;
@@ -137,8 +139,12 @@ module CPU #(parameter width=32)(
         end
         
         else begin
-                alu_result_reg<=alu_result;
+                if(select)
+                data<=RD1_reg;
+                else
+                data<= Data_Read;
                 
+                alu_result_reg<=alu_result;
                 RD1_reg<=RD1;
                 RD2_reg<=RD2;
             if(F_En)
