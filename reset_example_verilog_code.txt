@@ -1,0 +1,67 @@
+
+module reset_example (
+    input wire clk,
+    input wire rst,
+    output reg [7:0] data [0:511]
+);
+
+always @(posedge clk or posedge rst) begin
+    if (rst) begin
+        data[0] <= 0;        data[1] <= 0;        data[2] <= 0;        data[3] <= 0;        data[4] <= 0;        data[5] <= 0;        data[6] <= 0;        data[7] <= 0;        data[8] <= 0;        data[9] <= 0;
+        data[10] <= 0;        data[11] <= 0;        data[12] <= 0;        data[13] <= 0;        data[14] <= 0;        data[15] <= 0;        data[16] <= 0;        data[17] <= 0;        data[18] <= 0;        data[19] <= 0;
+        data[20] <= 0;        data[21] <= 0;        data[22] <= 0;        data[23] <= 0;        data[24] <= 0;        data[25] <= 0;        data[26] <= 0;        data[27] <= 0;        data[28] <= 0;        data[29] <= 0;
+        data[30] <= 0;        data[31] <= 0;        data[32] <= 0;        data[33] <= 0;        data[34] <= 0;        data[35] <= 0;        data[36] <= 0;        data[37] <= 0;        data[38] <= 0;        data[39] <= 0;
+        data[40] <= 0;        data[41] <= 0;        data[42] <= 0;        data[43] <= 0;        data[44] <= 0;        data[45] <= 0;        data[46] <= 0;        data[47] <= 0;        data[48] <= 0;        data[49] <= 0;
+        data[50] <= 0;        data[51] <= 0;        data[52] <= 0;        data[53] <= 0;        data[54] <= 0;        data[55] <= 0;        data[56] <= 0;        data[57] <= 0;        data[58] <= 0;        data[59] <= 0;
+        data[60] <= 0;        data[61] <= 0;        data[62] <= 0;        data[63] <= 0;        data[64] <= 0;        data[65] <= 0;        data[66] <= 0;        data[67] <= 0;        data[68] <= 0;        data[69] <= 0;
+        data[70] <= 0;        data[71] <= 0;        data[72] <= 0;        data[73] <= 0;        data[74] <= 0;        data[75] <= 0;        data[76] <= 0;        data[77] <= 0;        data[78] <= 0;        data[79] <= 0;
+        data[80] <= 0;        data[81] <= 0;        data[82] <= 0;        data[83] <= 0;        data[84] <= 0;        data[85] <= 0;        data[86] <= 0;        data[87] <= 0;        data[88] <= 0;        data[89] <= 0;
+        data[90] <= 0;        data[91] <= 0;        data[92] <= 0;        data[93] <= 0;        data[94] <= 0;        data[95] <= 0;        data[96] <= 0;        data[97] <= 0;        data[98] <= 0;        data[99] <= 0;
+        data[100] <= 0;        data[101] <= 0;        data[102] <= 0;        data[103] <= 0;        data[104] <= 0;        data[105] <= 0;        data[106] <= 0;        data[107] <= 0;        data[108] <= 0;        data[109] <= 0;
+        data[110] <= 0;        data[111] <= 0;        data[112] <= 0;        data[113] <= 0;        data[114] <= 0;        data[115] <= 0;        data[116] <= 0;        data[117] <= 0;        data[118] <= 0;        data[119] <= 0;
+        data[120] <= 0;        data[121] <= 0;        data[122] <= 0;        data[123] <= 0;        data[124] <= 0;        data[125] <= 0;        data[126] <= 0;        data[127] <= 0;        data[128] <= 0;        data[129] <= 0;
+        data[130] <= 0;        data[131] <= 0;        data[132] <= 0;        data[133] <= 0;        data[134] <= 0;        data[135] <= 0;        data[136] <= 0;        data[137] <= 0;        data[138] <= 0;        data[139] <= 0;
+        data[140] <= 0;        data[141] <= 0;        data[142] <= 0;        data[143] <= 0;        data[144] <= 0;        data[145] <= 0;        data[146] <= 0;        data[147] <= 0;        data[148] <= 0;        data[149] <= 0;
+        data[150] <= 0;        data[151] <= 0;        data[152] <= 0;        data[153] <= 0;        data[154] <= 0;        data[155] <= 0;        data[156] <= 0;        data[157] <= 0;        data[158] <= 0;        data[159] <= 0;
+        data[160] <= 0;        data[161] <= 0;        data[162] <= 0;        data[163] <= 0;        data[164] <= 0;        data[165] <= 0;        data[166] <= 0;        data[167] <= 0;        data[168] <= 0;        data[169] <= 0;
+        data[170] <= 0;        data[171] <= 0;        data[172] <= 0;        data[173] <= 0;        data[174] <= 0;        data[175] <= 0;        data[176] <= 0;        data[177] <= 0;        data[178] <= 0;        data[179] <= 0;
+        data[180] <= 0;        data[181] <= 0;        data[182] <= 0;        data[183] <= 0;        data[184] <= 0;        data[185] <= 0;        data[186] <= 0;        data[187] <= 0;        data[188] <= 0;        data[189] <= 0;
+        data[190] <= 0;        data[191] <= 0;        data[192] <= 0;        data[193] <= 0;        data[194] <= 0;        data[195] <= 0;        data[196] <= 0;        data[197] <= 0;        data[198] <= 0;        data[199] <= 0;
+        data[200] <= 0;        data[201] <= 0;        data[202] <= 0;        data[203] <= 0;        data[204] <= 0;        data[205] <= 0;        data[206] <= 0;        data[207] <= 0;        data[208] <= 0;        data[209] <= 0;
+        data[210] <= 0;        data[211] <= 0;        data[212] <= 0;        data[213] <= 0;        data[214] <= 0;        data[215] <= 0;        data[216] <= 0;        data[217] <= 0;        data[218] <= 0;        data[219] <= 0;
+        data[220] <= 0;        data[221] <= 0;        data[222] <= 0;        data[223] <= 0;        data[224] <= 0;        data[225] <= 0;        data[226] <= 0;        data[227] <= 0;        data[228] <= 0;        data[229] <= 0;
+        data[230] <= 0;        data[231] <= 0;        data[232] <= 0;        data[233] <= 0;        data[234] <= 0;        data[235] <= 0;        data[236] <= 0;        data[237] <= 0;        data[238] <= 0;        data[239] <= 0;
+        data[240] <= 0;        data[241] <= 0;        data[242] <= 0;        data[243] <= 0;        data[244] <= 0;        data[245] <= 0;        data[246] <= 0;        data[247] <= 0;        data[248] <= 0;        data[249] <= 0;
+        data[250] <= 0;        data[251] <= 0;        data[252] <= 0;        data[253] <= 0;        data[254] <= 0;        data[255] <= 0;        data[256] <= 0;        data[257] <= 0;        data[258] <= 0;        data[259] <= 0;
+        data[260] <= 0;        data[261] <= 0;        data[262] <= 0;        data[263] <= 0;        data[264] <= 0;        data[265] <= 0;        data[266] <= 0;        data[267] <= 0;        data[268] <= 0;        data[269] <= 0;
+        data[270] <= 0;        data[271] <= 0;        data[272] <= 0;        data[273] <= 0;        data[274] <= 0;        data[275] <= 0;        data[276] <= 0;        data[277] <= 0;        data[278] <= 0;        data[279] <= 0;
+        data[280] <= 0;        data[281] <= 0;        data[282] <= 0;        data[283] <= 0;        data[284] <= 0;        data[285] <= 0;        data[286] <= 0;        data[287] <= 0;        data[288] <= 0;        data[289] <= 0;
+        data[290] <= 0;        data[291] <= 0;        data[292] <= 0;        data[293] <= 0;        data[294] <= 0;        data[295] <= 0;        data[296] <= 0;        data[297] <= 0;        data[298] <= 0;        data[299] <= 0;
+        data[300] <= 0;        data[301] <= 0;        data[302] <= 0;        data[303] <= 0;        data[304] <= 0;        data[305] <= 0;        data[306] <= 0;        data[307] <= 0;        data[308] <= 0;        data[309] <= 0;
+        data[310] <= 0;        data[311] <= 0;        data[312] <= 0;        data[313] <= 0;        data[314] <= 0;        data[315] <= 0;        data[316] <= 0;        data[317] <= 0;        data[318] <= 0;        data[319] <= 0;
+        data[320] <= 0;        data[321] <= 0;        data[322] <= 0;        data[323] <= 0;        data[324] <= 0;        data[325] <= 0;        data[326] <= 0;        data[327] <= 0;        data[328] <= 0;        data[329] <= 0;
+        data[330] <= 0;        data[331] <= 0;        data[332] <= 0;        data[333] <= 0;        data[334] <= 0;        data[335] <= 0;        data[336] <= 0;        data[337] <= 0;        data[338] <= 0;        data[339] <= 0;
+        data[340] <= 0;        data[341] <= 0;        data[342] <= 0;        data[343] <= 0;        data[344] <= 0;        data[345] <= 0;        data[346] <= 0;        data[347] <= 0;        data[348] <= 0;        data[349] <= 0;
+        data[350] <= 0;        data[351] <= 0;        data[352] <= 0;        data[353] <= 0;        data[354] <= 0;        data[355] <= 0;        data[356] <= 0;        data[357] <= 0;        data[358] <= 0;        data[359] <= 0;
+        data[360] <= 0;        data[361] <= 0;        data[362] <= 0;        data[363] <= 0;        data[364] <= 0;        data[365] <= 0;        data[366] <= 0;        data[367] <= 0;        data[368] <= 0;        data[369] <= 0;
+        data[370] <= 0;        data[371] <= 0;        data[372] <= 0;        data[373] <= 0;        data[374] <= 0;        data[375] <= 0;        data[376] <= 0;        data[377] <= 0;        data[378] <= 0;        data[379] <= 0;
+        data[380] <= 0;        data[381] <= 0;        data[382] <= 0;        data[383] <= 0;        data[384] <= 0;        data[385] <= 0;        data[386] <= 0;        data[387] <= 0;        data[388] <= 0;        data[389] <= 0;
+        data[390] <= 0;        data[391] <= 0;        data[392] <= 0;        data[393] <= 0;        data[394] <= 0;        data[395] <= 0;        data[396] <= 0;        data[397] <= 0;        data[398] <= 0;        data[399] <= 0;
+        data[400] <= 0;        data[401] <= 0;        data[402] <= 0;        data[403] <= 0;        data[404] <= 0;        data[405] <= 0;        data[406] <= 0;        data[407] <= 0;        data[408] <= 0;        data[409] <= 0;
+        data[410] <= 0;        data[411] <= 0;        data[412] <= 0;        data[413] <= 0;        data[414] <= 0;        data[415] <= 0;        data[416] <= 0;        data[417] <= 0;        data[418] <= 0;        data[419] <= 0;
+        data[420] <= 0;        data[421] <= 0;        data[422] <= 0;        data[423] <= 0;        data[424] <= 0;        data[425] <= 0;        data[426] <= 0;        data[427] <= 0;        data[428] <= 0;        data[429] <= 0;
+        data[430] <= 0;        data[431] <= 0;        data[432] <= 0;        data[433] <= 0;        data[434] <= 0;        data[435] <= 0;        data[436] <= 0;        data[437] <= 0;        data[438] <= 0;        data[439] <= 0;
+        data[440] <= 0;        data[441] <= 0;        data[442] <= 0;        data[443] <= 0;        data[444] <= 0;        data[445] <= 0;        data[446] <= 0;        data[447] <= 0;        data[448] <= 0;        data[449] <= 0;
+        data[450] <= 0;        data[451] <= 0;        data[452] <= 0;        data[453] <= 0;        data[454] <= 0;        data[455] <= 0;        data[456] <= 0;        data[457] <= 0;        data[458] <= 0;        data[459] <= 0;
+        data[460] <= 0;        data[461] <= 0;        data[462] <= 0;        data[463] <= 0;        data[464] <= 0;        data[465] <= 0;        data[466] <= 0;        data[467] <= 0;        data[468] <= 0;        data[469] <= 0;
+        data[470] <= 0;        data[471] <= 0;        data[472] <= 0;        data[473] <= 0;        data[474] <= 0;        data[475] <= 0;        data[476] <= 0;        data[477] <= 0;        data[478] <= 0;        data[479] <= 0;
+        data[480] <= 0;        data[481] <= 0;        data[482] <= 0;        data[483] <= 0;        data[484] <= 0;        data[485] <= 0;        data[486] <= 0;        data[487] <= 0;        data[488] <= 0;        data[489] <= 0;
+        data[490] <= 0;        data[491] <= 0;        data[492] <= 0;        data[493] <= 0;        data[494] <= 0;        data[495] <= 0;        data[496] <= 0;        data[497] <= 0;        data[498] <= 0;        data[499] <= 0;
+        data[500] <= 0;        data[501] <= 0;        data[502] <= 0;        data[503] <= 0;        data[504] <= 0;        data[505] <= 0;        data[506] <= 0;        data[507] <= 0;        data[508] <= 0;        data[509] <= 0;
+        data[510] <= 0;        data[511] <= 0;
+    end else begin
+        // Normal operation code goes here
+    end
+end
+
+endmodule
